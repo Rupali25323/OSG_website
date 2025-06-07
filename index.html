@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Om Shree Geotech Pvt. Ltd. - Geotechnical Engineering Experts" />
+  <meta name="keywords" content="Geotechnical Investigation, Soil Testing, Pile Load Test, Civil Engineering" />
+  <meta name="author" content="Om Shree Geotech Pvt. Ltd." />
+  <title>Om Shree Geotech Pvt. Ltd. | Home</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  .skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    width: 5px;
+   
+    position: absolute;
+    left: 50%;
+    z-index: 30;
+    transform-origin: top;
+  }
+
+  .skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+  }
+
+  .skewed .top > div,
+  .skewed .top img {
+    transform: skew(30deg);
+    margin-left: 1000px;
+  }
+</style>
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body class="font-sans leading-relaxed text-gray-800 scroll-smooth">
+
+  <!-- Header / Navbar -->
+<header class="bg-white shadow fixed top-0 w-full z-50" x-data="{ open: false }">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="./images/logo-removebg-preview (1).png" alt="Om Shree Geotech Logo" class="h-10 w-auto" />
+      <span class="text-xl font-bold text-orange-600">Om Shree Geotech Pvt Ltd (OSGPL)</span>
+    </a>
+
+    <!-- Hamburger button (mobile only) -->
+    <button 
+      @click="open = !open" 
+      class="md:hidden flex items-center justify-center w-10 h-10 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-600"
+      aria-label="Toggle menu"
+    >
+      <svg 
+        x-show="!open" 
+        xmlns="http://www.w3.org/2000/svg" 
+        class="h-6 w-6 text-gray-700" 
+        fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+        stroke-width="2"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg 
+        x-show="open" 
+        xmlns="http://www.w3.org/2000/svg" 
+        class="h-6 w-6 text-gray-700" 
+        fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+        stroke-width="2"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav 
+      :class="{'block': open, 'hidden': !open}" 
+      class="hidden md:flex space-x-6 items-center absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow md:shadow-none md:mt-0 mt-2 md:rounded-none rounded-b-md md:p-0 p-4"
+    >
+      <a href="index.html" class="block md:inline text-gray-700 hover:text-orange-600 transition py-2 md:py-0">Home</a>
+      <a href="about.html" class="block md:inline text-gray-700 hover:text-orange-600 transition py-2 md:py-0">About Us</a>
+      <a href="service.html" class="block md:inline text-gray-700 hover:text-orange-600 transition py-2 md:py-0">Services</a>
+      <a href="contact.html" class="block md:inline text-gray-700 hover:text-orange-600 transition py-2 md:py-0">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ADD THIS MAIN SECTION TO OFFSET HEADER -->
+<main class="pt-24">
+  <!-- Your actual page content goes here -->
+  <section class="bg-gray-50 py-8 px-4 text-center">
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Welcome to Om Shree Geotech Pvt Ltd</h1>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      We specialize in geotechnical investigation and testing services across India.
+    </p>
+  </section>
+</main>
+
+
+
+  <!-- Main Content -->
+ <!-- Hero Image with Overlay Text -->
+
+<!-- Alpine.js (ensure this is included once in your HTML) -->
+
+
+<!-- Hero Section -->
+<div 
+  class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8"
+  x-data="{ showImage: false }"
+  x-init="setTimeout(() => showImage = true, 300)"
+>
+  <!-- Grid -->
+  <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+    
+    <!-- Text Column -->
+    <div>
+      <h1 class="block text-2xl font-bold text-gray-800 sm:text-4xl lg:text-4xl lg:leading-tight">
+        Start your journey with 
+        <span class="text-orange-400">Om Shree Geo Tech Pvt. Ltd.</span>
+      </h1>
+      <p class="mt-3 text-lg text-gray-800">
+        At SGES, we employ a team of highly skilled experts and technicians specializing in a wide range of services.
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+        <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="about.html">
+          About Us
+          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" href="contact.html">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Review -->
+      <div class="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5">
+        <!-- Review stars and text -->
+        <div class="py-5">
+          <div class="flex gap-x-1 text-gray-800">
+            <!-- Repeat Star SVG (unchanged) -->
+            <template x-for="i in 5" :key="i">
+              <svg class="size-4" viewBox="0 0 51 51" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.0352 1.6307L33.9181 16.3633...Z" />
+              </svg>
+            </template>
+          </div>
+         
+          <div class="mt-5">
+            <svg class="h-auto w-16 text-gray-800" viewBox="0 0 80 27" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <!-- Your existing star logo SVG here -->
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Text Column -->
+
+    <!-- Image Column with Slide-in Animation -->
+    <div 
+      class="relative ms-6 transition-all duration-9000 ease-out transform"
+      :class="showImage ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'"
+    >
+      <img class="w-full rounded-md" src="images/homepage.jpeg" alt="Hero Image" />
+
+      <!-- Decorative Overlay -->
+      <div class="absolute inset-0 -z-1 bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6"></div>
+
+      <!-- Decorative SVG -->
+      <div class="absolute bottom-0 start-0">
+        <svg class="w-2/3 ms-auto h-auto text-white" width="630" height="451" viewBox="0 0 630 451" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="531" y="352" width="99" height="99" fill="currentColor"/>
+          <rect x="140" y="352" width="106" height="99" fill="currentColor"/>
+          <rect x="482" y="402" width="64" height="49" fill="currentColor"/>
+          <rect x="433" y="402" width="63" height="49" fill="currentColor"/>
+          <rect x="384" y="352" width="49" height="50" fill="currentColor"/>
+          <rect x="531" y="328" width="50" height="50" fill="currentColor"/>
+          <rect x="99" y="303" width="49" height="58" fill="currentColor"/>
+          <rect x="99" y="352" width="49" height="50" fill="currentColor"/>
+          <rect x="99" y="392" width="49" height="59" fill="currentColor"/>
+          <rect x="44" y="402" width="66" height="49" fill="currentColor"/>
+          <rect x="234" y="402" width="62" height="49" fill="currentColor"/>
+          <rect x="334" y="303" width="50" height="49" fill="currentColor"/>
+          <rect x="581" width="49" height="49" fill="currentColor"/>
+          <rect x="581" width="49" height="64" fill="currentColor"/>
+          <rect x="482" y="123" width="49" height="49" fill="currentColor"/>
+          <rect x="507" y="124" width="49" height="24" fill="currentColor"/>
+          <rect x="531" y="49" width="99" height="99" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+    <!-- End Image Column -->
+  </div>
+</div>
+<!-- End Hero Section -->
+
+<!-- End Hero -->
+
+
+<section class="py-24 relative bg-white">
+  <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+    <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
+      
+      <!-- Left: Image Grid -->
+      <div class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
+        <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+          <img class="rounded-xl object-cover w-full h-auto max-w-xs" src="./images/home1.jpg" alt="About Us Image 1" />
+        </div>
+        <img class="sm:ml-0 ml-auto rounded-xl object-cover w-full h-auto max-w-xs" src="./images/hero3.jpeg" alt="About Us Image 2" />
+      </div>
+      
+      <!-- Right: Text Content -->
+      <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+        <div class="w-full flex-col justify-center items-start gap-8 flex">
+          <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+            <h2 class="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+              About Us
+            </h2>
+            <p class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+              OM Shree Geo Tech Pvt. Ltd., operating under the name Shree Geotech & Engineering Services (SGES),
+              has significantly expanded its capabilities in the field of Non-Destructive Testing (NDT) and
+              Research Services since August 2021.
+            </p>
+          </div>
+          
+          <!-- Stats -->
+          <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
+            <div class="flex-col justify-start items-start inline-flex">
+              <h3 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">3+</h3>
+              <h6 class="text-gray-500 text-base font-normal leading-relaxed">Years of Service</h6>
+            </div>
+            <div class="flex-col justify-start items-start inline-flex">
+              <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">50+</h4>
+              <h6 class="text-gray-500 text-base font-normal leading-relaxed">Projects Completed</h6>
+            </div>
+            <div class="flex-col justify-start items-start inline-flex">
+              <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">40+</h4>
+              <h6 class="text-gray-500 text-base font-normal leading-relaxed">Satisfied Clients</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <a href="about.html"
+          class="sm:w-fit w-full px-3.5 py-2 bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+          <span class="px-1.5 text-white text-sm font-medium leading-6">Learn More</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="pb-12 pt-20 lg:pb-[90px] lg:pt-[120px] dark:bg-dark">
+  <div class="container mx-auto">
+    <div class="-mx-4 flex flex-wrap">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+          <span class="mb-2 block text-lg font-semibold text-primary">
+            Our Services
+          </span>
+          <h2 class="mb-3 text-3xl font-bold leading-[1.2] text-dark sm:text-4xl md:text-[40px] dark:text-white">
+            What We Offer
+          </h2>
+          <p class="text-base text-body-color dark:text-dark-6">
+             At SGES, we employ a team of highly skilled experts and technicians specializing in a wide range of services.
+          </p>
+        </div>
+      </div>
+    </div>
+   <div class="-mx-4 flex flex-wrap">
+  <!-- Service Item -->
+  <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+    <div class="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg md:px-7 xl:px-10 dark:bg-dark-2">
+      <h4 class="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
+        Plate Load Test
+      </h4>
+      <p class="text-body-color dark:text-dark-6">
+        A plate load test, also known as plate bearing test, determines the ground's bearing capacities.
+      </p>
+    </div>
+  </div>
+
+  <!-- Service Item -->
+  <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+    <div class="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg md:px-7 xl:px-10 dark:bg-dark-2">
+      <h4 class="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
+        Static Pile Load Test
+      </h4>
+      <p class="text-body-color dark:text-dark-6">
+        Static Load Tests measure the response of a pile under an applied load — the most accurate method for determining pile capacities & settlement.
+      </p>
+    </div>
+  </div>
+
+  <!-- Service Item -->
+  <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+    <div class="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg md:px-7 xl:px-10 dark:bg-dark-2">
+      <h4 class="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
+        Anchor Pull Out Test
+      </h4>
+      <p class="text-body-color dark:text-dark-6">
+        The Anchor Pull Out Test determines the load bearing capacity of the selected anchor in the specific fastening substrate.
+      </p>
+    </div>
+  </div>
+
+  <!-- Service Item -->
+  <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+    <div class="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg md:px-7 xl:px-10 dark:bg-dark-2">
+      <h4 class="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
+        Geotechnical Investigation
+      </h4>
+      <p class="text-body-color dark:text-dark-6">
+        OM Shree Geo Tech Pvt. Ltd. has rich experience in geotechnical investigations, consistently completing projects on time and within budget.
+      </p>
+    </div>
+  </div>
+
+  <!-- Service Item -->
+  <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+    <div class="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg md:px-7 xl:px-10 dark:bg-dark-2">
+      <h4 class="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
+        Dynamic Pile Load Test
+      </h4>
+      <p class="text-body-color dark:text-dark-6">
+        Dynamic Load Tests monitor the response of a pile subjected to repeated hammer blows at the pile head.
+      </p>
+    </div>
+  </div>
+
+  <!-- Service Item -->
+  <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+    <div class="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg md:px-7 xl:px-10 dark:bg-dark-2">
+      <h4 class="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
+        Pile Integrity Test
+      </h4>
+      <p class="text-body-color dark:text-dark-6">
+        Pile Integrity Test (PIT) is a non-destructive test method used for evaluating the quality and structural integrity of piles.
+      </p>
+    </div>
+  </div>
+  
+</div>
+
+  </div>
+  <!-- More Services Button -->
+<div class="w-full mt-8 text-center">
+  <a
+    href="./service.html"
+    class="inline-block rounded-lg bg-primary bg-indigo-600 px-6 py-3 text-base font-semibold text-white transition duration-300 hover:bg-opacity-90"
+  >
+    More Services
+  </a>
+</div>
+
+</section>
+
+<section class="bg-white py-20 px-6">
+  <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Brands that Trust Us</h2>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-12 max-w-6xl mx-auto">
+    <img src="images/TandT.jpeg" alt="Brand 1" class="w-28 mx-auto transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-md" />
+    <img src="images/SMCinfra.png" alt="Brand 2" class="w-28 mx-auto transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-md" />
+    <img src="images/GVPR.png" alt="Brand 3" class="w-28 mx-auto transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-md" />
+    <img src="images/BRG.png" alt="Brand 4" class="w-28 mx-auto transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-md" />
+    <img src="images/SRGPL.png" alt="Brand 5" class="w-28 mx-auto transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-md" />
+    <img src="images/sonaiinfra.jpeg" alt="Brand 6" class="w-28 mx-auto transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-md" />
+    <img src="images/GEODUX.png" alt="Brand 7" class="w-28 mx-auto transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-md" />
+  </div>
+</section>
+
+
+
+
+
+<footer class="bg-gray-100 text-gray-700 px-6 py-10">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Left: Logo & Contact Info -->
+    <div>
+      <img src="./images/logo-removebg-preview (1).png" alt="Om Shree Geotech Logo" class="h-12 mb-4" />
+      <p class="mb-2"><strong>Phone:</strong> <a href="tel:+7387244204|9082014585" class="hover:text-orange-600">+91 7387244204 | 9082014585</a></p>
+      <p class="mb-2"><strong>Email:</strong> <a href="mailto:info@omshreegeotech.in" class="hover:text-orange-600">info@omshreegeotech.in</a></p>
+      <p class="mb-2"><strong>Website:</strong> <a href="https://www.omshreegeotech.com" class="hover:text-orange-600" target="_blank">www.omshreegeotech.com</a></p>
+      <p class="mt-4"><strong>Address:</strong><br />Shop No.1,Ground Floor,Sai Ganesh Dham,Near Bhumkar Chowk,Pune-Bangalore Highway Narhe Pune 411041</p>
+    </div>
+
+    <!-- Center: Navigation Links -->
+    <div class="text-center">
+      <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-orange-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-orange-600">About Us</a></li>
+        <li><a href="service.html" class="hover:text-orange-600">Services</a></li>
+        <li><a href="contact.html" class="hover:text-orange-600">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Social Media -->
+    <div class="md:text-right text-center">
+      <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+      <div class="flex md:justify-end justify-center space-x-4">
+        <!-- WhatsApp -->
+     <a href="https://wa.me/911234567890" target="_blank" aria-label="WhatsApp" class="text-green-600 hover:text-green-700">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 fill-current" viewBox="0 0 32 32">
+    <path d="M16.004 2.004C8.28 2.004 2 8.28 2 16.004c0 2.824.732 5.518 2.124 7.916L2 30l6.22-2.11A13.957 13.957 0 0016.004 30c7.723 0 14-6.277 14-13.996 0-7.724-6.277-13.999-13.996-13.999zm0 25.334c-2.47 0-4.88-.668-6.964-1.936l-.5-.296-3.694 1.26 1.1-3.55-.36-.58A11.31 11.31 0 014.67 16.004c0-6.258 5.082-11.334 11.334-11.334 6.25 0 11.33 5.076 11.33 11.334.002 6.248-5.078 11.334-11.33 11.334zm6.248-8.498c-.342-.17-2.03-.998-2.345-1.112-.314-.114-.544-.17-.773.17-.23.34-.887 1.112-1.088 1.342-.2.23-.4.257-.742.085-.34-.17-1.436-.53-2.732-1.694-1.008-.898-1.686-2.01-1.884-2.35-.2-.34-.022-.523.148-.693.152-.152.34-.397.51-.596.17-.2.227-.342.34-.57.114-.228.057-.428-.028-.598-.085-.17-.773-1.86-1.06-2.547-.28-.672-.568-.58-.773-.59l-.658-.012c-.227 0-.596.086-.91.428-.312.34-1.194 1.168-1.194 2.845 0 1.677 1.222 3.297 1.392 3.526.17.228 2.408 3.668 5.83 5.14 3.422 1.473 3.422.982 4.038.923.615-.057 1.972-.8 2.25-1.57.284-.773.284-1.43.2-1.57-.085-.143-.312-.227-.653-.396z"/>
+  </svg>
+</a>
+
+        <!-- Add more icons here (Facebook, LinkedIn, etc.) -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="text-center text-sm text-gray-500 mt-8 border-t pt-4">
+    &copy; 2025 Om Shree Geotech Pvt. Ltd. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+
+
+</body>
+
+</html>
